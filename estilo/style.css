@@ -4,7 +4,7 @@
 }
 header{
    background-color: white;
-   padding: 10px;
+   padding: 10px 20px;
    display: flex;
    position: relative;
    color: black;
@@ -41,9 +41,6 @@ header .wpp a{
    color: white;
    text-decoration: none;
 }
-header .wpp{
-
-}
 .container1{
    background: rgb(214, 182, 92);
    background-image: url();
@@ -55,9 +52,8 @@ header .wpp{
 .container1 .art1{
    background-color: rgba(0, 0, 0, 0.521);
    display: block;
-   height: 450px;
+   height: auto;
    width: 300px;
-
 }
 .container1 .art1 h1{
    width: 200px;
@@ -66,7 +62,7 @@ header .wpp{
 }
 .container1 .art1 p{
    margin: 20px 0px;
-   color: gray;
+   color: rgb(192, 189, 189);
 }
 .container1 .art1 .box{
    background-color: rgb(0, 217, 255);
@@ -76,15 +72,17 @@ header .wpp{
    text-align: center;
    width: 250px;
 }
+/*------------CONTAINER 2------------*/
 .container2{
    background-color: aqua;
-   position: absolute;
    width: 100vw;
+   height: auto;
    padding: 20px;
    display: flex;
 }
 .container2 .cardbio{
    font-size: 1.5em;
+   align-items: center;
 }
 .container2 .cardbio h2{
    color: orange;
@@ -103,18 +101,61 @@ header .wpp{
    margin: 10px;
    padding: 20px;
 }
+/*------------CONTAINER 3------------*/
+.container3{
+   background-color: rgb(70, 67, 67);
+   padding: 40px 20px;
+   text-align: center;
+   color: rgb(211, 206, 206);
+}
+.container3 .art4 h3{
+   color: white;
+   margin: 20px 0px;
+   font-size: 2em;
+}
+.container3 .art4 .h3{
+   font-size: 1.8em;
+}
+.container3 .art5{
+   display: flex;
+   margin: 10px 0px;
+}
+.container3 .art5 .card{
+   padding: 20px;
+   height: 100px;
+   color: rgb(211, 206, 206);
+   border: 1px solid rgba(255, 255, 255, 0.719);
+   margin: 20px 10px;
+}
+.container3 .art5 .card img{
+   margin: auto;
+   width: 100px;
+}
+.container4{
+   display: flex;
+   padding: 30px 20px;
+   background-color: orange;
+   font-size: 1.3em;
+   text-align: center;
+}
+.container4 .button{
+   
+   color: white;
+   background-color: rgb(20, 218, 218);
+   border-radius: 5px;
+   padding: 20px;
+   margin: 20px 40px;
+}
+/*------------MEDIA QUERY------------*/
 @media (max-width:1030px){
    .container2{
-      height: 422px;
-      padding: 24px;
       display: flex;
    }
    .container2 .cardbio .prof{
       text-align: center;
    }
    .container2 .art3{
-      position: absolute;
-      right: 10px;
+     align-items: flex-end;
    }
 }
 @media (max-width: 800px){
@@ -145,17 +186,24 @@ header .wpp{
    }
    /*----------FIM CONTAINER1---------*/
 
-   /*-----------CONTAINER 1-----------*/
+   /*-----------CONTAINER 2-----------*/
    .container2{
       display: block;
       text-align: center;
       height: auto;
    }
-   .container2 .art3{
-      position:relative ;
-   }
+   
    .container2 .art2 .imagem{
       margin: auto;
    }
    /*----------FIM CONTAINER1---------*/
+   /*-----------CONTAINER 3-----------*/
+   .container3 .art5{
+      display: block;
+   }
+   /*----------FIM CONTAINER1---------*/
+   /*-----------CONTAINER 4-----------*/
+   .container4{
+      display: block;
+   }
 }
