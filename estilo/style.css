@@ -1,0 +1,161 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+header{
+   background-color: white;
+   padding: 10px;
+   display: flex;
+   position: relative;
+   color: black;
+}
+header span.title{
+   color: maroon;
+}
+header nav{
+   position: absolute;
+   display: flex;
+   right: 250px;
+   margin: 10px 0px;
+}
+header nav li{
+   margin: 10px;
+   display: inline;
+   list-style: none;
+}
+header nav a{
+   color: black;
+   text-decoration: none;
+}
+header .wpp{
+   background-color: dodgerblue;
+   width: 200px;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   position: absolute;
+   right:10px;
+   border-radius: 5px;
+}
+header .wpp a{
+   color: white;
+   text-decoration: none;
+}
+header .wpp{
+
+}
+.container1{
+   background: rgb(214, 182, 92);
+   background-image: url();
+   height: 450px;
+   margin: 20px 0px;
+   padding: 20px;
+   color: white;
+}
+.container1 .art1{
+   background-color: rgba(0, 0, 0, 0.521);
+   display: block;
+   height: 450px;
+   width: 300px;
+
+}
+.container1 .art1 h1{
+   width: 200px;
+   font-weight: bold;
+   font-size: 2em;
+}
+.container1 .art1 p{
+   margin: 20px 0px;
+   color: gray;
+}
+.container1 .art1 .box{
+   background-color: rgb(0, 217, 255);
+   padding: 20px;
+   color: white;
+   border-radius: 5px;
+   text-align: center;
+   width: 250px;
+}
+.container2{
+   background-color: aqua;
+   position: absolute;
+   width: 100vw;
+   padding: 20px;
+   display: flex;
+}
+.container2 .cardbio{
+   font-size: 1.5em;
+}
+.container2 .cardbio h2{
+   color: orange;
+}
+.container2 .art2{
+   
+}
+.container2 .art2 .imagem{
+   position: relative;
+   background-color: gray;
+   width: 300px;
+   height: 350px;
+}
+.container2 .art3 p{
+   background-color: orange;
+   margin: 10px;
+   padding: 20px;
+}
+@media (max-width:1030px){
+   .container2{
+      height: 422px;
+      padding: 24px;
+      display: flex;
+   }
+   .container2 .cardbio .prof{
+      text-align: center;
+   }
+   .container2 .art3{
+      position: absolute;
+      right: 10px;
+   }
+}
+@media (max-width: 800px){
+   /*-----------HEADER-----------*/
+   header h1{
+      margin: auto;
+   }
+   header nav{
+      display: none;
+   }
+   /*----------FIM HEADER---------*/
+
+   /*-----------CONTAINER 1-----------*/
+   .container1{
+      height: 350px;
+   }
+   .container1 .art1{
+      height: auto;
+      width: auto;
+      text-align: center;
+   }
+   .container1 .art1 h1{
+      width: auto;
+      text-align: center;
+   }
+   .container1 .art1 .box{
+      margin: auto;
+   }
+   /*----------FIM CONTAINER1---------*/
+
+   /*-----------CONTAINER 1-----------*/
+   .container2{
+      display: block;
+      text-align: center;
+      height: auto;
+   }
+   .container2 .art3{
+      position:relative ;
+   }
+   .container2 .art2 .imagem{
+      margin: auto;
+   }
+   /*----------FIM CONTAINER1---------*/
+}
