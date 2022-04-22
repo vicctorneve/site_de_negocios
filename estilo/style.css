@@ -48,12 +48,16 @@ header .wpp a{
    margin: 20px 0px;
    padding: 20px;
    color: white;
+   position: relative;
 }
 .container1 .art1{
    background-color: rgba(0, 0, 0, 0.521);
    display: block;
    height: auto;
    width: 300px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
 }
 .container1 .art1 h1{
    width: 200px;
@@ -119,6 +123,8 @@ header .wpp a{
 .container3 .art5{
    display: flex;
    margin: 10px 0px;
+   justify-content: center;
+   
 }
 .container3 .art5 .card{
    padding: 20px;
@@ -131,12 +137,15 @@ header .wpp a{
    margin: auto;
    width: 100px;
 }
+
+/*------------CONTAINER 4------------*/
 .container4{
    display: flex;
    padding: 30px 20px;
    background-color: orange;
    font-size: 1.3em;
    text-align: center;
+   position: relative;
 }
 .container4 .button{
    
@@ -145,6 +154,116 @@ header .wpp a{
    border-radius: 5px;
    padding: 20px;
    margin: 20px 40px;
+}
+/*------------CONTAINER 5------------*/
+.container5{
+   margin: 20px;
+}
+.container5 .box{
+   text-align: center;
+   font-size: 1.5em;
+   margin: 40px;
+}
+.container5 .box p{
+   color: rgb(155, 153, 153);
+   
+}
+.container5 div.box_dep{
+   
+   font-size: 1.5em;
+   display: flex;
+}
+.container5 div.box_dep div.card_dep{
+   position: relative;
+   background-color: gray;
+   margin: 10px;
+   width: 90vw;
+   margin-bottom: 30px;
+}
+
+.container5 div.box_dep div.card_dep h4{
+   color: orange;
+   margin-bottom: 20px;
+}
+.container5 div.box_dep div.card_dep p{
+   color: rgb(21, 185, 235);
+   font-weight: bold;
+   margin: 20px;
+}
+.container5 div.box_dep div.card_dep video{
+   position: relative;
+   background-color: rgba(255, 255, 0, 0.363);
+   width: 100%;
+}
+.container5 .noticias{
+   
+   width: 200px;
+   margin: 40px auto;
+}
+.container5 .noticias p{
+   
+   font-weight: bolder;
+   padding: 5px;
+   color: rgb(0, 153, 255);
+   font-size: 1.5em;
+   border: 1px solid rgb(0, 153, 255);
+   border-radius: 5px;
+   display: inline;
+}
+.container5 .noticias a{
+   color: rgb(0, 153, 255);
+   text-decoration: none;
+}
+.container5 .noticias p:hover{
+   color: orange;
+   border: 1px solid orange;
+}
+/*------------CONTAINER 6------------*/
+.container6{
+   padding: 40px 20px;
+   background-color: rgb(243, 240, 236);
+   display: flex;
+   font-size: 1.5em;
+}
+.container6 .cards{
+   width: 100vw;
+}
+.container6 .card{
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.container6 .card_blumenau p.end{
+   width: 500px;
+   margin: 10px 0px;
+   color: rgb(150, 150, 150);
+}
+.container6 .cards .button_wpp{
+   width: 325px;
+   display: flex;
+   background-color: rgb(40, 207, 236);
+   padding: 20px;
+   border-radius: 8px;
+   margin: 30px 0px;
+}
+.container6 .card_blumenau .button_wpp img{
+   width: 50px;
+   background-color: yellow;
+   margin-right: 20px;
+}
+.container6  .button_local{
+   border: 1px solid rgb(0, 217, 255);
+   border-radius: 5px;
+   text-align: center;
+   
+}
+footer{
+   background-color: rgb(160, 160, 160);
+   height: 400px;
+}
+footer h1{
+   text-align: center;
 }
 /*------------MEDIA QUERY------------*/
 @media (max-width:1030px){
@@ -156,6 +275,12 @@ header .wpp a{
    }
    .container2 .art3{
      align-items: flex-end;
+   }
+   .container5 div.box_dep{
+      display: block;
+   }
+   .container5 div.box_dep .card_dep{
+      
    }
 }
 @media (max-width: 800px){
