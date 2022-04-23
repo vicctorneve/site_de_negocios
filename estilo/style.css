@@ -115,7 +115,7 @@ header .wpp a{
 
 .container2-principal{
    background-color: white;
-   height: 378px;
+   height: auto;
    padding: 20px;
 }
 .container2-principal .container2-all{
@@ -163,7 +163,7 @@ header .wpp a{
 
 .container3{
    background-color: rgb(70, 67, 67);
-   padding: 40px 20px;
+   padding: 20px 20px;
    text-align: center;
    color: rgb(211, 206, 206);
    margin-top: 25px;
@@ -413,9 +413,8 @@ footer h1{
    /*----------FIM CONTAINER1---------*/
 
    /*-----------CONTAINER 2-----------*/
-   .container2{
+   .container2-principal .container2-all {
       display: block;
-      text-align: center;
       height: auto;
    }
    
