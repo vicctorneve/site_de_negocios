@@ -142,6 +142,7 @@ header .wpp a{
 }
 .container2-principal .container2-all p.box{
    background-color: orange;
+   width: 300px;
    margin: 10px 0px;
    padding: 10px;
 }
@@ -417,7 +418,20 @@ footer h1{
       display: block;
       height: auto;
    }
-   
+   .container2-principal .container2-all .art2 h2{
+      
+   }
+   .container2-principal .container2-all .art2 .imagem{
+      
+      
+   }
+   .container2-principal .container2-all .art2{
+      margin: auto;
+   }
+   .container2-principal .container2-all .art3{
+      text-align: center;
+      margin: 70px auto;
+   }
    .container2 .art2 .imagem{
       margin: auto;
    }
