@@ -7,7 +7,8 @@
    <link rel="stylesheet" href="estilo/style.css">
    <title>Raul Postorello</title>
 </head>
-<body> 
+<body>
+   <!-----------------HEADER------------------>
    <header> 
       <h1>Raul <span class="title">Pistorello</span></h1>
       <nav>
@@ -23,37 +24,53 @@
       </div>
    </header>
    <main>
-
+      <!-------------CONTAINER 1------------->
       <section class="container1"> <!--secão com imagem de fundo-->
          <article class="art1">
             <h1>Dentes Tortos, nunca mais</h1>
             <p>Seu sorriso merece um tratamento projetado
                exclusivamente para ele. Conheça o Invisalign.</p>
-            <p class="box">Saiba mais sobre a (nomedaempresa)</p>
+            <a href="#">
+               <p class="box">Saiba mais sobre a Invisalign.</p>
+            </a>
          </article>
       </section>
 
       <!--OBSERVACAO-->
-      <section class="container2"> <!--secão branca-->
-         <article class="art2">
-            <div class="cardbio">
-               <h2>Dr. Raul Pistorello</h2>
-               <p>Especialista em Ortodontia e</p>
-               <p class="prof">ortopedia Facial</p>
+
+      <!-------------CONTAINER 2------------->
+
+      <section class="container2-principal"> <!--secão branca-->
+         <div class="container2-all">
+            <div class="card art2">
+               <div class="bio">
+                  <h2>Dr. Raul Pistorello</h2>
+                  <p>Especialista em Ortodontia e ortopedia Facial</p>
+               </div>
+               <p class="box">Mais de 20 anos de experiência clínica.</p>
+               <p class="box">Palestrante oficial da Align Technology no Brasil.</p>
+               <p class="box">Invisalign Doctor com maior número de casos tratados em Santa Catarina.</p>
             </div>
-            <div class="imagem">
+
+            <div class="card imagem">
                <img src="" alt="">
             </div>
-         </article>
-         <article class="art3"> 
-            <p>Maior número de casos na região de atuação.</p>
-            <p>Maior número de casos na região de atuação.</p>
-            <p>Maior número de casos na região de atuação.</p>
-            <p>Maior número de casos na região de atuação.</p>
-            <p>Maior número de casos na região de atuação.</p>
+
+            <article class="card art3"> 
+
+               <p class="box">Membro da American Association of Orthodontists</p>
+               <p class="box">Membro da World Federation of Orthodontists</p>
+               <p class="box">Membro da German Association For Align Orthodontics</p>
+
+               <a href="#">
+                  <p><strong>Saiba mais sobre mim</strong></p>
+               </a>
+            </div>
          </article>
       </section>
       <!--OBSERVACAO-->
+
+      <!-------------CONTAINER 3------------->
 
       <section class="container3"> <!--secão cinza-->
          <article class="art4">
@@ -88,10 +105,17 @@
          <p>Invisalign para Jovens e Adultos</p>
       </section>
 
+      <!-------------CONTAINER 4------------->
+
       <section class="container4"><!--secão amarela-->
          <p>Você está no caminho para a melhor versão do seu sorriso.</p>
-         <p class="button">Agendar pelo whatsApp</p>
+         <a href="#">
+            <p class="button">Agendar pelo whatsApp</p>
+         </a>
       </section>
+
+      <!-------------CONTAINER 5------------->
+
       <section class="container5"> <!--secão branca-->
          <div class="box">
             <h4>Quem conhece, aprova e recomenda</h4>
@@ -120,6 +144,9 @@
             </a>
          </div>
       </section>
+
+      <!-------------CONTAINER 6------------->
+
       <section class="container6">
          <div class="cards card">
             <h5>Onde você quer ser atendido?</h5>
@@ -135,19 +162,28 @@
                </div>
             </a>
 
-            <div class="button_local">
-               <img src="" alt="">
-               <p>Local no Google Maps</p>
-            </div> 
+            <a href="#">
+               <div class="button_local">
+                  <img src="" alt="">
+                  <p>Local no Google Maps</p>
+               </div>
+            </a>
 
-            <p>Se preferir, ligue-nos pelos telefones</p>
-            <p>47 3326-3651 ou 47 3326-6636</p>
+            <div class="tel">
+               <p class=".p_gray">Se preferir, ligue-nos pelos telefones</p>
+               <p>47 3326-3651 ou 47 3326-6636</p>
+            </div>
          </div>
 
          <div class="cards card_brusque">
             <p>Atendimento em Brusque, SC</p>
             <p class="end">Rua Sebastião Belli, 25 – Centro</p>
-            <p>Local no Google Maps</p>
+            <div class="button_local">
+                  <a href="#">
+                     <img src="" alt="">
+                     <p>Local no Google Maps</p>
+                  </a>
+               </div>
          </div>
       </section>
    </main>
