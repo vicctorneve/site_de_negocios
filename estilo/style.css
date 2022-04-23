@@ -137,6 +137,9 @@ header .wpp a{
 .container2-principal .container2-all .art2 div.bio p{
    text-align: right;
 }
+.container2-principal .container2-all .imagem img{
+   width: 300px;
+}
 .container2-principal .container2-all p.box{
    background-color: orange;
    margin: 10px 0px;
@@ -163,6 +166,7 @@ header .wpp a{
    padding: 40px 20px;
    text-align: center;
    color: rgb(211, 206, 206);
+   margin-top: 25px;
 }
 .container3 .art4 h3{
    color: white;
@@ -294,6 +298,7 @@ header .wpp a{
 .container6 .cards{
    width: 100vw;
    margin: 0px 10px;
+   
 }
 .container6 .card{
    margin-right: 20px;
@@ -366,7 +371,7 @@ footer h1{
    /*-----------CONTAINER 2-----------*/
 
    .container2-principal{
-      
+
    }
 
    /*-----------CONTAINER 5-----------*/
