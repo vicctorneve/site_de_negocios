@@ -130,16 +130,18 @@ header .wpp a{
 .container2-principal .container2-all .art2 div.bio{
    margin-bottom: 20px;
 }
-.container2-principal .container2-all .art2 div.bio h2{
+.container2-principal .container2-all .art2 div.bio {
    color: orange;
    text-align: right;
 }
 .container2-principal .container2-all .art2 div.bio p{
-   text-align: right;
+   color: black;
 }
 .container2-principal .container2-all .imagem img{
    width: 300px;
+   
 }
+
 .container2-principal .container2-all p.box{
    background-color: orange;
    width: 300px;
@@ -340,6 +342,7 @@ header .wpp a{
 .container6  .button_local p{
    border: 1px solid rgb(40, 207, 236);
    border-radius: 5px;
+   width: 350px;
    text-align: center;
    color: rgb(40, 207, 236);
    margin: 20px 0px;
@@ -372,11 +375,16 @@ footer h1{
 /*------------MEDIA QUERY------------*/
 @media (max-width:1030px){
    /*-----------CONTAINER 2-----------*/
-
-   .container2-principal{
+   .container2-principal .container2-all {
 
    }
-
+   
+   .container2-principal .container2-all .art2 div.bio {
+      text-align: center;
+   }
+   .container2-principal .container2-all .imagem{
+      margin: auto;  
+   }
    /*-----------CONTAINER 5-----------*/
    .container5 div.box_dep{
       display: block;
