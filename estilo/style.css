@@ -132,7 +132,7 @@ header .wpp a{
 }
 .container2-principal .container2-all .art2 div.bio {
    color: orange;
-   text-align: right;
+   text-align: center;
 }
 .container2-principal .container2-all .art2 div.bio p{
    color: black;
@@ -305,7 +305,6 @@ header .wpp a{
 }
 .container6 .card{
    margin-right: 20px;
-   display: flex;
    justify-content: center;
    font-size: 1.2em;
 }
@@ -339,11 +338,15 @@ header .wpp a{
    
    background: linear-gradient(to right, rgb(6, 219, 6), rgb(6, 219, 6));
 }
+.container6  .button_local{
+   margin: 30px auto;
+}
 .container6  .button_local p{
    border: 1px solid rgb(40, 207, 236);
    border-radius: 5px;
-   width: 350px;
-   text-align: center;
+   display: inline;
+   padding: 2px 0px;
+   
    color: rgb(40, 207, 236);
    margin: 20px 0px;
 }
@@ -351,16 +354,16 @@ header .wpp a{
    border: 1px solid orange;
    color: orange;
 }
-.container6 .tel{
-   color: rgb(12, 187, 187);
-}
-.container6 .tel .p_gray{
+.container6 .card_blumenau .tel p{
    color: gray;
    font-size: 20px;
-   margin: 10px 0px;
+}
+.container6 .tel p.number{
+   color: rgb(12, 187, 187);
+   
 }
 .container6 .card_brusque{
-   
+   margin: 40px 0px;
 }
 /*---------------FOOTER--------------*/
 
@@ -375,23 +378,12 @@ footer h1{
 /*------------MEDIA QUERY------------*/
 @media (max-width:1030px){
    /*-----------CONTAINER 2-----------*/
-   .container2-principal .container2-all {
-
-   }
-   
-   .container2-principal .container2-all .art2 div.bio {
-      text-align: center;
-   }
-   .container2-principal .container2-all .imagem{
-      margin: auto;  
-   }
+  
    /*-----------CONTAINER 5-----------*/
    .container5 div.box_dep{
       display: block;
    }
-   .container5 div.box_dep .card_dep{
-      
-   }
+
 }
 @media (max-width: 800px){
    /*-----------HEADER-----------*/
@@ -404,6 +396,7 @@ footer h1{
    /*----------FIM HEADER---------*/
 
    /*-----------CONTAINER 1-----------*/
+
    .container1{
       height: 350px;
    }
@@ -420,32 +413,31 @@ footer h1{
    .container1 .art1 .box{
       margin: auto;
    }
-   /*----------FIM CONTAINER1---------*/
 
    /*-----------CONTAINER 2-----------*/
-   .container2-principal .container2-all {
+   .container2-principal{
+      position: relative;
+   }
+   .container2-principal .container2-all{
       display: block;
-      height: auto;
-   }
-   .container2-principal .container2-all .art2 h2{
-      
-   }
-   .container2-principal .container2-all .art2 .imagem{
-      
-      
-   }
-   .container2-principal .container2-all .art2{
-      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
    }
    .container2-principal .container2-all .art3{
-      text-align: center;
-      margin: 70px auto;
+      margin-top: 60px;
    }
-   .container2 .art2 .imagem{
-      margin: auto;
+   .container2-principal .container2-all .art2 div.bio {
+      text-align: center;
+      
    }
    /*----------FIM CONTAINER1---------*/
    /*-----------CONTAINER 3-----------*/
+   .container3{
+      position: relative;
+      margin-top: 1000px;
+   }
    .container3 .art5{
       display: block;
    }
@@ -461,5 +453,8 @@ footer h1{
    .container6 .cards{
       width: 400px;
       margin: auto;
+   }
+   .container6 .card_blumenau{
+      margin: 20px auto 80px auto;
    }
 }
