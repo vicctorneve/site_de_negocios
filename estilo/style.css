@@ -6,9 +6,7 @@
    
 }
 /*--------------HEADER---------------*/
-main{
-   font-family: Arial, Helvetica, sans-serif;
-}
+
 header{
    background-color: white;
    padding: 10px 20px;
@@ -55,8 +53,12 @@ header .wpp:hover{
 header .wpp a{
    color: white;
    text-decoration: none;
+   overflow: hidden;
 }
-
+main{
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
 /*------------CONTAINER 1------------*/
 
 .container1{
@@ -392,7 +394,10 @@ footer h1{
 @media (max-width: 800px){
    /*-----------HEADER-----------*/
    header{
-      background-color: rgb(99, 98, 98);
+      background-color: rgb(65, 64, 64);
+   }
+   header img{
+      width: 30px;
    }
    header h1{
       margin: auto;
