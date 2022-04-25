@@ -108,6 +108,7 @@ header .wpp a{
 }
 .container1 .art1 p.box:hover{
    background: linear-gradient(to right, orange, orange);
+   
    color: black;
    transition:all 0.5s;
 }
