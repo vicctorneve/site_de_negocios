@@ -152,9 +152,10 @@ main{
 .container2 .box{
    width: 300px;
    background-color: orange;
-   margin-bottom: 10px;
+   
    padding: 10px;
    display: block;
+   margin-top: 28px;
 }
 .container2 .imagem{
    grid-area: img;
@@ -397,7 +398,7 @@ main{
 
 footer{
    background-color: rgb(160, 160, 160);
-   height: 400px;
+   
 }
 footer h1{
    text-align: center;
@@ -406,7 +407,7 @@ footer h1{
 /*------------MEDIA QUERY------------*/
 @media (max-width:1250px){
    .container2{
-      height: 750px;
+      height: auto;
    }
    .container2 .container2-all{
       width: 100vw;
@@ -414,7 +415,9 @@ footer h1{
    }
    .container2 .container2-all .bio{
       text-align: center;
-      width: 500px;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
    }
    .container2 .container2-all{
       
@@ -428,22 +431,39 @@ footer h1{
                      "img    b";   
                   
    }
+   .container2 .container2-all .imagem{
+      position: relative;
+      
+      
+      height: 650px;
+   }
    .container2 .container2-all .imagem img{
-      margin: -10px 0px 0px 30px;
-      width: 400px;
+      position: absolute;
+      
+      
+      width: 430px;
+      
    }
    .container2 .container2-all .box{
       
       
       position: relative;
-      width: 500px;
+      width: 400px;
       
       padding: 20px;
    }
 }
-@media (max-width:1030px){
+@media (max-width:1050px){
    /*-----------CONTAINER 2-----------*/
-   
+   .container2 .container2-all .bio{
+      width: 400px;
+   }
+   .container2 .container2-all .imagem{
+      width: 350px;
+   }
+   .container2 .container2-all .imagem img{
+      width: 350px;
+   }
    /*-----------CONTAINER 5-----------*/
    .container5 div.box_dep{
       display: block;
@@ -487,24 +507,35 @@ footer h1{
 
    /*-----------CONTAINER 2-----------*/
    .container2 .container2-all{
-      display: block;        
-      width: 500px;
+      display: block;
+      width: auto;
+   }
+   .container2 .container2-all .bio{
+      width: 400px;
       margin: auto;
    }
    .container2 .container2-all .imagem{
-     margin-bottom: 300px;
+      width: 400px;
+      margin: auto;
+      height: 580px;
+   }
+   .container2 .container2-all .box{
+      width: 400px;
+      margin: 10px auto;
    }
    .container2 .container2-all a{
-      
-      
-      margin: 20px 0px;
+     height: 180px;
+     width: 350px;
+     margin: auto;
+     display: flex;
+     
+     align-items: center;
    }
    /*-----------CONTAINER 3-----------*/
 
    .container3{
       position: relative;
-      margin-top: 600px;
-
+      margin-top: 0px;
    }
    .container3 .art5{
       display: block;
