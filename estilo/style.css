@@ -124,72 +124,10 @@ main{
 /*------------CONTAINER 2------------*/
 
 .container2{
-   padding: 20px;
-   height: auto;
-}
-.container2 .container2-all{
-   font-size: 1.2em;
+   background-color: red;
+   height: 500px;
+   text-align: center;
    
-   width: max-content;
-   margin: auto;
-   position: relative;
-   display: grid;
-   grid-template: "title img   r"
-                  "l    img    r"
-                  "l    img    r"
-                  "l    img    b"
-}
-.container2 .bio{
-   grid-area: title;
-   width: 400px;
-   
-   margin: 20px 0px;
-   font-size: 1.5em;
-}
-.container2 .bio h1{
-   color: orange;
-}
-.container2 .box{
-   width: 300px;
-   background-color: orange;
-   
-   padding: 10px;
-   display: block;
-   margin-top: 28px;
-}
-.container2 .imagem{
-   grid-area: img;
-   width: 320px;
-   height: 350px;
-   position: relative;
-}
-.container2 .imagem img{
-   position: absolute;
-   top: 30px;
-   width: 300px;
-   
-}
-.container2 .box-1{
-   grid-row: l;
-   
-}
-.container2 .box-2{
-   grid-area: r;
-   height: 200px;
-}
-.container2 .container2-all .link{
-   grid-area: b;
-}
-.container2 .container2-all a{
-   display: block;
-   font-weight: bolder;
-   font-size: 1.5em;
-   color: black;
-   text-decoration: none;
-}
-.container2 .container2-all a:hover{
-   color: orange;
-   transition: 0.3s;
 }
 /*------------CONTAINER 3------------*/
 
@@ -405,75 +343,17 @@ footer h1{
 }
 
 /*------------MEDIA QUERY------------*/
-@media (max-width:1250px){
-   .container2{
-      height: auto;
-   }
-   .container2 .container2-all{
-      width: 100vw;
-      position: relative;
-   }
-   .container2 .container2-all .bio{
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      width: 500px;
-   }
-   .container2 .container2-all{
-      
-      grid-template: "title  title"
-                     "img    l"
-                     "img    l"
-                     "img    l"
-                     "img    r"
-                     "img    r"
-                     "img    r"
-                     "img    b";   
-                  
-   }
-   .container2 .container2-all .imagem{
-      position: relative;
-      
-      
-      height: 650px;
-   }
-   .container2 .container2-all .imagem img{
-      position: absolute;
-      
-      
-      width: 430px;
-      
-   }
-   .container2 .container2-all .box{
-      
-      
-      position: relative;
-      width: 500px;
-      
-      padding: 20px;
-   }
-}
 @media (max-width:1050px){
    /*-----------CONTAINER 2-----------*/
-   .container2 .container2-all .bio{
-      width: 400px;
-   }
-   .container2 .container2-all .imagem{
-      width: 350px;
-   }
-   .container2 .container2-all .imagem img{
-      width: 350px;
-   }
+
    /*-----------CONTAINER 5-----------*/
    .container5 div.box_dep{
       display: block;
    }
-   .container2 .container2-all .box{
-      
-   }
 }
 @media (max-width: 800px){
    /*-----------HEADER-----------*/
+   
    header{
       background-color: rgb(65, 64, 64);
    }
@@ -508,32 +388,7 @@ footer h1{
    }
 
    /*-----------CONTAINER 2-----------*/
-   .container2 .container2-all{
-      display: block;
-      width: auto;
-   }
-   .container2 .container2-all .bio{
-      width: 400px;
-      margin: auto;
-      
-   }
-   .container2 .container2-all .imagem{
-      width: 400px;
-      margin: auto;
-      height: 580px;
-   }
-   .container2 .container2-all .box{
-      width: 400px;
-      margin: 10px auto;
-   }
-   .container2 .container2-all a{
-     height: 180px;
-     width: 350px;
-     margin: auto;
-     display: flex;
-     
-     align-items: center;
-   }
+
    /*-----------CONTAINER 3-----------*/
 
    .container3{
