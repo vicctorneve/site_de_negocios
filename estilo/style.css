@@ -41,7 +41,7 @@ header nav a:hover{
    transition:0.5s linear;
    text-decoration: underline 2px orange;
 }
-header .wpp{
+header .btn_wpp{
    background: linear-gradient(to right, rgb(41, 186, 243), rgb(11, 168, 230));
    width: 200px;
    padding: 10px;
@@ -51,11 +51,11 @@ header .wpp{
    right:10px;
    
 }
-header .wpp:hover{
+header .btn_wpp:hover{
    transition: 0.5s;
    background: linear-gradient(to right, rgb(6, 219, 6), rgb(6, 219, 6));
 }
-header .wpp a{
+header .btn_wpp a{
    color: white;
    text-decoration: none;
    overflow: hidden;
@@ -66,14 +66,14 @@ main{
 /*------------CONTAINER 1------------*/
 
 .container1{
-
    background-size: cover;
+   
    background-color: rgb(214, 182, 92);
    background-image: url(../assets/imagens/background-container1.jpg);
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: scroll;
-
+   
    height: 450px;
    padding: 20px;
    color: white;
@@ -129,59 +129,92 @@ main{
 /*------------CONTAINER 2------------*/
 
 .container2{
-   background-color: red;
-   height: 500px;
-   text-align: center;
+   background-color: white;
+   height: auto;
+
+}
+.container2 .container-content{
+   padding: 20px;
    
+}
+.container2 .container-content .p-spec{
+  
+}
+
+.container2 .container-content h1{
+   
+   color: orange;
+   font-size: 2em;
+   margin: 10px;
+}
+.container2 .container-content span.img-dr{
+   margin: 20px ;
+   background-image: url(/assets/imagens/imagem-container2.jpg);
+   background-size: cover;
+   background-color: aqua;
+   display: block;
+   width: 300px;
+   height: 400px;
+}
+.container2 .container-content div.block-dr .block{
+   background-color: orange;
 }
 /*------------CONTAINER 3------------*/
 
 .container3{
    background-color: rgb(70, 67, 67);
-   padding: 20px 20px;
+   padding: 20px;
    text-align: center;
    color: rgb(211, 206, 206);
-   margin-top: 25px;
-
 }
-.container3 .art4 h3{
+.container3 .art4 h2, p.spec{
    color: white;
    margin: 20px 0px;
-   font-size: 2em;
+   font-size: 2.2em;
 }
-.container3 .art4 .h3{
-   font-size: 1.8em;
+.container3 .art4 p.spec{
+   font-size: 1.6em;
 }
 .container3 .art5{
    display: flex;
    margin: 10px 0px;
    justify-content: center;
-   
 }
 .container3 .art5 .card{
+   width: 200px;
+   position: relative;
    padding: 20px;
-   height: 100px;
    color: rgb(211, 206, 206);
    border: 1px solid rgba(255, 255, 255, 0.719);
    margin: 20px 10px;
 }
-.container3 .art5 .card img{
-   margin: auto;
-   width: 100px;
+.container3 .art5 .card p.title{
+   margin-bottom: 10px;
+   font-weight: bold;
+}
+.container3 .end p{
+   color: rgb(211, 206, 206);
+   text-decoration: none;
+   margin: 10px;
+}
+.container3 .end p:hover{
+   color: orange;
 }
 
 /*------------CONTAINER 4------------*/
 
 .container4{
    display: flex;
-   padding: 30px 20px;
+   padding:20px;
    background-color: orange;
    font-size: 1.3em;
    text-align: center;
-   position: relative;
 }
-.container4 p{
+.container4 h2{
+   color: black;
+   font-size: 1em;
    margin: auto;
+   font-weight: normal;
 }
 .container4 .button{
    color: white;
@@ -189,14 +222,13 @@ main{
    border-radius: 5px;
    padding: 20px;
    margin: 20px 40px;
-}
 
+}
 .container4 a{
    color: white;
    text-decoration: none;
 }
 .container4 .button:hover{
-   transition:all 0.5s;
    background: linear-gradient(to right, rgb(3, 196, 3), rgb(3, 196, 3));
 }
 
@@ -204,6 +236,10 @@ main{
 
 .container5{
    margin: 20px;
+}
+.container5 h2{
+   color: black;
+   font-size: 1em;
 }
 .container5 .box{
    text-align: center;
@@ -227,7 +263,7 @@ main{
    margin-bottom: 30px;
 }
 
-.container5 div.box_dep div.card_dep h4{
+.container5 div.box_dep div.card_dep h3{
    color: rgb(219, 144, 4);
    margin-bottom: 20px;
 }
@@ -246,6 +282,7 @@ main{
 .container5 .noticias{
    text-align: center;
    margin: 40px 0px;
+
 }
 .container5 .noticias p{
    
@@ -279,6 +316,9 @@ main{
    margin: 0px 20px;
    width: 400px;
 }
+.container6 .cards h1{
+   font-size: 1em;
+}
 .container6 .card{
    margin-right: 20px;
    justify-content: center;
@@ -310,19 +350,17 @@ main{
    
    background: linear-gradient(to right, rgb(6, 219, 6), rgb(6, 219, 6));
 }
-.container6  .button_local{
+.container6  .btn_local{
    margin: 30px auto;
 }
-.container6  .button_local p{
+.container6  .btn_local p{
    border: 1px solid rgb(40, 207, 236);
    border-radius: 5px;
    display: inline;
-   padding: 2px 0px;
-   
    color: rgb(40, 207, 236);
    margin: 20px 0px;
 }
-.container6  .button_local p:hover{
+.container6  .btn_local p:hover{
    border: 1px solid orange;
    color: orange;
 }
@@ -346,6 +384,7 @@ footer{
 footer h1{
    text-align: center;
 }
+
 
 /*------------MEDIA QUERY------------*/
 @media (max-width:1050px){
@@ -372,7 +411,7 @@ footer h1{
    header nav{
       display: none;
    }
-   header .wpp{
+   header .btn_wpp{
       display: none;
    }
    
@@ -402,6 +441,9 @@ footer h1{
    }
    .container3 .art5{
       display: block;
+   }
+   .container3 .art5 .card{
+      width: auto;
    }
    
    /*-----------CONTAINER 4-----------*/
