@@ -48,7 +48,7 @@ header .btn_wpp{
    text-align: center;
    color: white;
    position: absolute;
-   right:10px;
+   right: 10px;
    
 }
 header .btn_wpp:hover{
@@ -73,7 +73,6 @@ main{
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: scroll;
-   
    height: 450px;
    padding: 20px;
    color: white;
@@ -85,9 +84,7 @@ main{
    display: block;
    width: 300px;
    position: absolute;
-   top: 50%;
    
-   transform: translateY(-50%);
 }
 .container1 .art1 h1{
    width: 240px;
@@ -343,38 +340,7 @@ main{
    margin: 10px 0px;
    color: white;
 }
-.container6 a{
-   text-decoration: none;
-}
-.container6 .card_blumenau .button_wpp p:hover {
-   
-   background: linear-gradient(to right, rgb(6, 219, 6), rgb(6, 219, 6));
-}
-.container6  .btn_local{
-   margin: 30px auto;
-}
-.container6  .btn_local p{
-   border: 1px solid rgb(40, 207, 236);
-   border-radius: 5px;
-   display: inline;
-   color: rgb(40, 207, 236);
-   margin: 20px 0px;
-}
-.container6  .btn_local p:hover{
-   border: 1px solid orange;
-   color: orange;
-}
-.container6 .card_blumenau .tel p{
-   color: gray;
-   font-size: 20px;
-}
-.container6 .tel p.number{
-   color: rgb(12, 187, 187);
-   
-}
-.container6 .card_brusque{
-   margin: 0px 40px;
-}
+
 /*---------------FOOTER--------------*/
 
 footer{
@@ -417,12 +383,14 @@ footer h1{
    
    /*-----------CONTAINER 1-----------*/
 
-   
+   .container1{
+      
+   }
    .container1 .art1{
       height: auto;
       width: auto;
-      text-align: center;
-      margin: 0px 20px;
+      
+      
    }
    .container1 .art1 h1{
       margin: auto;
