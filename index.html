@@ -12,34 +12,33 @@
    <header>
       <div class="content-menu">
          <h1>Raul<span class="title">Pistorello</span></h1>
-         <input type="checkbox" id="check">
-         <label for="check" class="menu-hamburguer">
+         <input type="checkbox" id="checkbox-menu">
+         <label for="checkbox-menu" class="menu-hamburguer">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
          </label>
-         <nav >
-            <ul class="menu">
+         <nav class="menu">
+            <ul onclick="getElementById('checkbox-menu').checked = false;">
                <li><a href="#home">Home</a></li>
                <li><a href="#perfil">Perfil</a></li>
                <li><a href="#invisalign">invisalign</a></li>
-               <li><a href="#">Contatos</a></li>
+               <li><a href="#feedback">Feedback</a></li>
                <li class="btn_wpp">WhatsApp</li>
             </ul>
          </nav>
       </div>
    </header>
    <main>
-      <!-------------CONTAINER 1------------->
-      <section class="container-home section" id="home">
+      <!-------------CONTAINER HOME------------->
+      <section class="container-home" id="home">
          <article class="card">
             <h1>Dentes Tortos, nunca mais</h1>
             <p>Seu sorriso merece um tratamento projetado exclusivamente para ele. Conheça o Invisalign.</p>
             <a href="#"><button class="btn-mais grow">Saiba mais sobre a Invisalign</button></a>
          </article>
       </section>
-
-      <!-------------CONTAINER 2------------->
+      <!-------------CONTAINER PRESENTETION------------->
       <section class="container-presentetion" id="perfil">
          <div class="content">
             <div class="title">
@@ -58,7 +57,7 @@
             <p class="saiba-mais grow">Saiba mais sobre mim</p>
          </div>
       </section>
-      <!-------------CONTAINER 3------------->
+      <!-------------CONTAINER INVISALIGN------------->
       <section class="container-Invisalign" id="invisalign">
          <article class="title-invisalign">
             <h2>Invisalign em Blumenau é com o Dr. Raul Pistorello</h2>
@@ -70,41 +69,34 @@
          </div>
          <article class="card-description">
             <div class="card">
-               <img src="" alt="">
                <p class="title">Praticamente invisivel</p>
                <p>Imperceptível mesmo próximo</p>
             </div>
             <div class="card">
-               <img src="" alt="">
                <p class="title">Removivel</p>
                <p>Não deixe de fazer o que você gosta</p>
             </div>
             <div class="card">
-               <img class="img" src="" alt="">
                <p class="title">Sem fios e metais</p>
                <p>Mais conforto no tratamento</p>
             </div>
             <div class="card">
-               <img src="" alt="">
                <p class="title">Projeção do sorriso</p>
                <p>Veja como ficará na primeira consulta</p>
             </div>
          </article>
          <div class="end">
-            <a href="#"><p>Invisalign para Veja como ficará na primeira consulta</p></a>
-            <a href="#"><p>Invisalign para Jovens e Adultos</p></a>
+            <a href="/"><p>Invisalign veja como ficará na primeira consulta</p></a>
+            <a href="/"><p>Invisalign para Jovens e Adultos</p></a>
          </div>
       </section>
-
       <!-------------CONTAINER 4------------->
-
-      <section class="container4"><!--secão amarela-->
+      <section class="container4">
          <h2>Você está no caminho para a melhor versão do seu sorriso.</h2>
          <p class="button grow"><a  href="#">Agendar pelo whatsApp</a></p>
       </section>
-
       <!-------------CONTAINER FEEDBACK------------->
-      <section class="container-feedback"> <!--secão branca-->
+      <section class="container-feedback" id="feedback">
          <div class="title">
             <h2>Quem conhece, aprova e recomenda</h2>
             <p>Depoimentos de ex-pacientes</p>
@@ -138,23 +130,11 @@
                </blockquote>
                <div class="card-img fernando"></div>
             </div>
-            
          </div>
-      </section>
-      <div class="grow noticias">
-         <a href="#">
-            <p>Todas as noticias</p>
-         </a>
-      </div>
-
-      <!-------------CONTAINER 6------------->
-
-      <section class="container6">
-         
       </section>
    </main>
    <footer>
-      <h1>Site criado Por Vicctor Neves a fim de estudos</h1>
+      <p>Site criado Por <a href="https://github.com/vicctorneve">Vicctor Neves</a> a fim de estudos</p>
    </footer>
 </body>
 </html>

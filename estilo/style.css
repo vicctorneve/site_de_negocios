@@ -2,23 +2,25 @@
    margin: 0px;
    padding: 0px;
    text-decoration: none;
+   list-style: none;
 }
-:root{
-   
-}
-.section{
-   min-height: 80vh;
+a{
+   color: inherit;
 }
 .content-menu{
    display: flex;
-   justify-content: space-between;
    max-width: 1200px;
+   padding: 10px;
    width: 100%;
    margin: auto;
    align-items: center;
+   justify-content: space-between;
 }
 /*--------------HEADER---------------*/
 body{
+   position: relative;
+   width: 100vw;
+   height: 100vh;
    overflow-x: hidden;
 }
 header{
@@ -27,31 +29,23 @@ header{
    padding: 10px 0px;
    background-color: white;
    display: flex;
-   position: relative;
    color: black;
 }
-header img{
-   display: none;
-}
 header span.title{
-   color: rgb(209, 138, 6);
+   color: orange;
 }
-header .menu{
+header nav{
    align-items: center;
    display: flex;
 }
-header .menu li{
-   margin: 0px 10px;
-   display: inline;
-   list-style: none;
+nav ul{
+   display: flex;
+   align-items: center;
+   gap: 20px;
 }
-header .menu a{
+header nav a{
    color: black;
    text-decoration: none;
-}
-header nav a:hover{
-   transition:0.5s linear;
-   text-decoration: underline 2px orange;
 }
 header .btn_wpp{
    cursor: pointer;
@@ -70,7 +64,7 @@ header .btn_wpp {
    text-decoration: none;
    overflow: hidden;
 }
-#check{
+#checkbox-menu{
    display: none;
 }
 /*------------ MENU MOBILE ------------*/
@@ -82,21 +76,50 @@ header .btn_wpp {
    width: 32px;
    height: 2px;
    background-color: black;
-   margin: 5px;
+   margin: 8px;
+   transition: all 200ms ease-in-out;
+
 }
 @media (max-width: 800px) {
-   ul.menu{
-      display: none;
-   }
    .menu-hamburguer {
       display: block;
    }
-}
-main{
-   font-family: Arial, Helvetica, sans-serif;
+   .menu {
+      display: none;       
+   }
+   .menu ul{
+      padding: 10px;
+      flex-direction: column;
+   }
+   #checkbox-menu:checked~.menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 57px;
+      height: 100vh;
+      z-index: 1000;
+      background-color: white;
+      right: 0;
+      width: 50vw; 
+   }
+   ul li.btn_wpp {
+      order: -1;
+   }
+   #checkbox-menu:checked + .menu-hamburguer div.line1{
+      transform: rotate(-45deg) translate(-8px);
+   }
+   #checkbox-menu:checked~.menu-hamburguer div.line2{
+      position: absolute;
+      opacity: 0;
+   }
+   #checkbox-menu:checked~.menu-hamburguer div.line3{
+      transform: rotate(45deg) translate(-5px, -1px);
+   }
 }
 /*------------CONTAINER 1------------*/
 .container-home{
+   height: 100vh;
    display: flex;
    align-items: center;
    background-size: cover;
@@ -179,7 +202,12 @@ main{
    width: 180px;
    cursor: pointer;
    color: black;
-   margin: 20px 0;
+   margin: 20px;
+   font-weight: bold;
+}
+.saiba-mais:hover {
+   color: orange;
+   text-decoration: underline;
 }
 /*------------CONTAINER 3------------*/
 .container-Invisalign{
@@ -272,23 +300,23 @@ main{
    font-size: 1.5em;
    display: flex;
 }
-.container-feedback div.depoimentos div.card_feedback{
+div.depoimentos div.card_feedback{
    position: relative;
    
    margin: 0px 10px;
    width: auto;
    margin-bottom: 30px;
 }
-.container-feedback .card_feedback h3{
+.card_feedback h3{
    color: rgb(219, 144, 4);
    margin-bottom: 20px;
 }
-.container-feedback  .depoimentos p{
+.depoimentos p{
    color: rgb(21, 185, 235);
    font-weight: bold;
    margin: 20px;
 }
-.container-feedback .card-img{
+.card-img{
    position: relative;
    background-color: rgba(255, 255, 0, 0.363);
    width: 100%;
@@ -305,43 +333,21 @@ main{
 .fernando{
    background-image: url(../assets/imagens/feedback/feedback-fernando.jpg);
 }
-.noticias{
-   text-align: center;
-   margin: 40px 0px;
-
-}
-.noticias p{
-   font-weight: bolder;
-   padding: 5px;
-   color: rgb(0, 153, 255);
-   font-size: 1.5em;
-   border: 1px solid rgb(0, 153, 255);
-   border-radius: 5px;
-   display: inline;
-}
-.noticias a{
-   color: rgb(0, 153, 255);
-   text-decoration: none;
-}
-.noticias p:hover{
-   color: orange;
-   border: 1px solid orange;
-}
-/*------------CONTAINER 6------------*/
-
 /*---------------FOOTER--------------*/
 footer{
-   background-color: rgb(160, 160, 160);
-   
+   background-color: black;
+   color: white;
 }
-footer h1{
+footer p{
    text-align: center;
 }
-
 /*------------ MEDIA QUERY ------------*/
-
 @media (max-width:800px) {
+   .container-home{
+      height: 50vh;
+   }
    .container-home .card{
+      text-align: center;
       width: 100%;
    }
    .container-home .card h1 {
