@@ -1,17 +1,31 @@
 *{
    margin: 0px;
    padding: 0px;
+   text-decoration: none;
 }
 :root{
    
+}
+.section{
+   min-height: 80vh;
+}
+.content-menu{
+   display: flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   width: 100%;
+   margin: auto;
+   align-items: center;
 }
 /*--------------HEADER---------------*/
 body{
    overflow-x: hidden;
 }
 header{
+   align-items: center;
+   justify-content: center;
+   padding: 10px 0px;
    background-color: white;
-   padding: 10px 20px;
    display: flex;
    position: relative;
    color: black;
@@ -22,18 +36,16 @@ header img{
 header span.title{
    color: rgb(209, 138, 6);
 }
-header nav{
-   position: absolute;
+header .menu{
+   align-items: center;
    display: flex;
-   right: 250px;
-   margin: 10px 0px;
 }
-header nav li{
-   margin: 10px;
+header .menu li{
+   margin: 0px 10px;
    display: inline;
    list-style: none;
 }
-header nav a{
+header .menu a{
    color: black;
    text-decoration: none;
 }
@@ -42,67 +54,81 @@ header nav a:hover{
    text-decoration: underline 2px orange;
 }
 header .btn_wpp{
+   cursor: pointer;
    background: linear-gradient(to right, rgb(41, 186, 243), rgb(11, 168, 230));
-   width: 200px;
    padding: 10px;
+   width: 200px;
    text-align: center;
    color: white;
-   position: absolute;
-   right: 10px;
-   
 }
 header .btn_wpp:hover{
    transition: 0.5s;
    background: linear-gradient(to right, rgb(6, 219, 6), rgb(6, 219, 6));
 }
-header .btn_wpp a{
+header .btn_wpp {
    color: white;
    text-decoration: none;
    overflow: hidden;
+}
+#check{
+   display: none;
+}
+/*------------ MENU MOBILE ------------*/
+.menu-hamburguer{
+   display: none;
+   cursor: pointer;
+}
+.menu-hamburguer div{
+   width: 32px;
+   height: 2px;
+   background-color: black;
+   margin: 5px;
+}
+@media (max-width: 800px) {
+   ul.menu{
+      display: none;
+   }
+   .menu-hamburguer {
+      display: block;
+   }
 }
 main{
    font-family: Arial, Helvetica, sans-serif;
 }
 /*------------CONTAINER 1------------*/
-
-.container1{
+.container-home{
+   display: flex;
+   align-items: center;
    background-size: cover;
-   
    background-color: rgb(214, 182, 92);
    background-image: url(../assets/imagens/background-container1.jpg);
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: scroll;
-   height: 450px;
    padding: 20px;
    color: white;
    position: relative;
 }
-.container1 .art1{
+.container-home .card{
+   width: 600px;
    padding: 20px;
    background-color: rgba(0, 0, 0, 0.349);
    display: block;
-   width: 300px;
-   position: absolute;
-   
 }
-.container1 .art1 h1{
-   width: 240px;
-   font-weight: bold;
+.container-home .card h1{
+   padding: 10px 0px;
+   font-size: 5em;
+}
+.btn-mais{
+   display: flex;
    font-size: 2em;
-}
-.container1 .art1 p{
-   margin: 20px 0px;
-   color: rgb(192, 189, 189);
-}
-.container1 .art1 p.box{
-   font-weight: bold;
-   background: linear-gradient(to right, rgb(41, 186, 243), rgb(11, 168, 230));
-   padding: 20px;
    color: white;
-   border-radius: 5px;
-   text-align: center;
-   width: 250px;
+   cursor: pointer;
+   font-weight: bold;
+   background-color: orange;
+   border: none;
+   margin: 20px auto;
+   padding: 10px;
 }
 .grow{
    -webkit-transform: scale(1.0);
@@ -112,39 +138,25 @@ main{
    -webkit-transform: scale(1.1);
    transition: 0.3s;
 }
-.container1 .art1 p.box:hover{
-   background: linear-gradient(to right, orange, orange);
-   
-   color: black;
-   transition:all 0.5s;
-}
-.container1 .art1 a{
-   color: white;
-   text-decoration: none;
-}
-
 /*------------CONTAINER 2------------*/
-
-.container2{
+.container-presentetion{
    background-color: white;
    height: auto;
-
 }
-.container2 .container-content{
+.container-presentetion .content{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
    padding: 20px;
-   
+   align-items: center;
+   width: auto;
+   justify-content: space-between;
 }
-.container2 .container-content .p-spec{
-  
-}
-
-.container2 .container-content h1{
-   
+.container-presentetion .content h1{
    color: orange;
    font-size: 2em;
    margin: 10px;
 }
-.container2 .container-content span.img-dr{
+.container-presentetion .content span.img-dr{
    margin: 20px ;
    background-image: url(/assets/imagens/imagem-container2.jpg);
    background-size: cover;
@@ -153,31 +165,46 @@ main{
    width: 300px;
    height: 400px;
 }
-.container2 .container-content div.block-dr .block{
+.content .experiencias{
+   display: flex;
+   gap: 20px;
+   padding: 0px 20px;
+   flex-direction: column;
+}
+.exp{
    background-color: orange;
+   padding: 10px;
+}
+.saiba-mais{
+   width: 180px;
+   cursor: pointer;
+   color: black;
+   margin: 20px 0;
 }
 /*------------CONTAINER 3------------*/
-
-.container3{
+.container-Invisalign{
    background-color: rgb(70, 67, 67);
    padding: 20px;
    text-align: center;
    color: rgb(211, 206, 206);
 }
-.container3 .art4 h2, p.spec{
+.container-Invisalign .title-invisalign h2, p.spec{
    color: white;
    margin: 20px 0px;
    font-size: 2.2em;
 }
-.container3 .art4 p.spec{
+.container-Invisalign .title-invisalign p.spec{
    font-size: 1.6em;
 }
-.container3 .art5{
+.container-img img{
+   width: 50%;
+   margin: 20px 0;
+}
+.container-Invisalign .card-description{
    display: flex;
-   margin: 10px 0px;
    justify-content: center;
 }
-.container3 .art5 .card{
+.container-Invisalign .card-description .card{
    width: 200px;
    position: relative;
    padding: 20px;
@@ -185,21 +212,19 @@ main{
    border: 1px solid rgba(255, 255, 255, 0.719);
    margin: 20px 10px;
 }
-.container3 .art5 .card p.title{
+.container-Invisalign .card-description .card p.title{
    margin-bottom: 10px;
    font-weight: bold;
 }
-.container3 .end p{
+.container-Invisalign .end p{
    color: rgb(211, 206, 206);
    text-decoration: none;
    margin: 10px;
 }
-.container3 .end p:hover{
+.container-Invisalign .end p:hover{
    color: orange;
 }
-
 /*------------CONTAINER 4------------*/
-
 .container4{
    display: flex;
    padding:20px;
@@ -219,7 +244,6 @@ main{
    border-radius: 5px;
    padding: 20px;
    margin: 20px 40px;
-
 }
 .container4 a{
    color: white;
@@ -228,61 +252,65 @@ main{
 .container4 .button:hover{
    background: linear-gradient(to right, rgb(3, 196, 3), rgb(3, 196, 3));
 }
-
-/*------------CONTAINER 5------------*/
-
-.container5{
+/*------------CONTAINER FEEDBACK------------*/
+.container-feedback{
    margin: 20px;
 }
-.container5 h2{
+.container-feedback h2{
    color: black;
    font-size: 1em;
 }
-.container5 .box{
+.container-feedback .title{
    text-align: center;
    font-size: 1.5em;
    margin: 40px;
 }
-.container5 .box p{
+.container-feedback .title p{
    color: rgb(155, 153, 153);
-   
 }
-.container5 div.box_dep{
-   
+.container-feedback div.depoimentos{
    font-size: 1.5em;
    display: flex;
 }
-.container5 div.box_dep div.card_dep{
+.container-feedback div.depoimentos div.card_feedback{
    position: relative;
    
    margin: 0px 10px;
    width: auto;
    margin-bottom: 30px;
 }
-
-.container5 div.box_dep div.card_dep h3{
+.container-feedback .card_feedback h3{
    color: rgb(219, 144, 4);
    margin-bottom: 20px;
 }
-.container5 div.box_dep div.card_dep p{
+.container-feedback  .depoimentos p{
    color: rgb(21, 185, 235);
    font-weight: bold;
    margin: 20px;
 }
-.container5 div.box_dep div.card_dep video{
+.container-feedback .card-img{
    position: relative;
    background-color: rgba(255, 255, 0, 0.363);
    width: 100%;
    height: 300px;
-   
+   background-position: center center;
+   background-size: cover;
 }
-.container5 .noticias{
+.julia{
+   background-image: url(../assets/imagens/feedback/feedback-julia.jpg);
+}
+.paula{
+   background-image: url(../assets/imagens/feedback/feedback-paula.jpg);
+}
+.fernando{
+   background-image: url(../assets/imagens/feedback/feedback-fernando.jpg);
+}
+.noticias{
    text-align: center;
    margin: 40px 0px;
 
 }
-.container5 .noticias p{
-   
+.noticias p{
    font-weight: bolder;
    padding: 5px;
    color: rgb(0, 153, 255);
@@ -291,58 +319,17 @@ main{
    border-radius: 5px;
    display: inline;
 }
-.container5 .noticias a{
+.noticias a{
    color: rgb(0, 153, 255);
    text-decoration: none;
 }
-.container5 .noticias p:hover{
+.noticias p:hover{
    color: orange;
    border: 1px solid orange;
 }
 /*------------CONTAINER 6------------*/
 
-.container6{
-   padding: 40px 20px;
-   background-color: rgb(243, 240, 236);
-   display: flex;
-   font-size: 1.5em;
-   position: relative;
-}
-.container6 .cards{
-   align-items: center;
-   margin: 0px 20px;
-   width: 400px;
-}
-.container6 .cards h1{
-   font-size: 1em;
-}
-.container6 .card{
-   margin-right: 20px;
-   justify-content: center;
-   font-size: 1.3em;
-   margin-top: 10vw;
-}
-.container6 .card_blumenau{
-   width: auto;
-}
-.container6 p.end{
-   margin: 30px 0px;
-   width: 350px;
-   color: rgb(150, 150, 150);
-}
-.container6 .cards .button_wpp p{
-   
-   font-size: 18px;
-   display: inline;
-   background-color: rgb(40, 207, 236);
-   padding: 20px;
-   border-radius: 8px;
-   margin: 10px 0px;
-   color: white;
-}
-
 /*---------------FOOTER--------------*/
-
 footer{
    background-color: rgb(160, 160, 160);
    
@@ -351,91 +338,34 @@ footer h1{
    text-align: center;
 }
 
+/*------------ MEDIA QUERY ------------*/
 
-/*------------MEDIA QUERY------------*/
-@media (max-width:1050px){
-   /*-----------CONTAINER 2-----------*/
-
-   /*-----------CONTAINER 5-----------*/
-   .container5 div.box_dep{
-      display: block;
+@media (max-width:800px) {
+   .container-home .card{
+      width: 100%;
    }
-}
-@media (max-width: 800px){
-   /*-----------HEADER-----------*/
-   
-   header{
-      background-color: rgb(65, 64, 64);
+   .container-home .card h1 {
+      font-size: 2em;
    }
-   header img{
-      width: 30px;
+   .btn-mais {
+      font-size: 1em;
    }
-   header h1{
-      margin: auto;
-      color: white;
+   .container-presentetion .content{
+      grid-template-columns: 1fr;
    }
-   header nav{
-      display: none;
-   }
-   header .btn_wpp{
-      display: none;
-   }
-   
-   /*-----------CONTAINER 1-----------*/
-
-   .container1{
-      
-   }
-   .container1 .art1{
-      height: auto;
-      width: auto;
-      
-      
-   }
-   .container1 .art1 h1{
+   .container-presentetion .content .title{
       margin: auto;
    }
-   .container1 .art1 .box{
+   .container-Invisalign .card-description{
+      display: flex;
+      flex-direction: column;
       margin: auto;
+      align-items: center;
    }
-
-   /*-----------CONTAINER 2-----------*/
-
-   /*-----------CONTAINER 3-----------*/
-
-   .container3{
-      position: relative;
-      margin-top: 0px;
+   .container-Invisalign .card-description .card {
+      width: 90%;
    }
-   .container3 .art5{
+   .container-feedback div.depoimentos{
       display: block;
-   }
-   .container3 .art5 .card{
-      width: auto;
-   }
-   
-   /*-----------CONTAINER 4-----------*/
-
-   .container4{
-      display: block;
-   }
-
-   /*-----------CONTAINER 6-----------*/
-
-   .container6{
-      display: block;
-   }
-   .container6 .cards{
-      width: 400px;
-      margin: auto;
-   }
-   .container6 .card{
-      margin: 80px auto;
-   }
-   .container6 .card_blumenau{
-      margin: 20px auto 80px auto;
-   }
-   .container6 p.end{
-      width: 350px;
    }
 }

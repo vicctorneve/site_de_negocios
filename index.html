@@ -9,63 +9,66 @@
 </head>
 <body>
    <!-----------------HEADER------------------>
-   <header> 
-      <img src="assets/imagens/menu_hamburguer.png" alt="">
-      <h1>Raul<span class="title">Pistorello</span></h1>
-      <nav>
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Duvidas</a></li>
-            <li><a href="#">Contatos</a></li>
-         </ul>
-      </nav>
-      <div class="btn_wpp">
-         <a href="#"><p>WhatsApp</p></a>
+   <header>
+      <div class="content-menu">
+         <h1>Raul<span class="title">Pistorello</span></h1>
+         <input type="checkbox" id="check">
+         <label for="check" class="menu-hamburguer">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </label>
+         <nav >
+            <ul class="menu">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#perfil">Perfil</a></li>
+               <li><a href="#invisalign">invisalign</a></li>
+               <li><a href="#">Contatos</a></li>
+               <li class="btn_wpp">WhatsApp</li>
+            </ul>
+         </nav>
       </div>
    </header>
    <main>
       <!-------------CONTAINER 1------------->
-      <section class="container1"> <!--secão com imagem de fundo-->
-         <article class="art1">
+      <section class="container-home section" id="home">
+         <article class="card">
             <h1>Dentes Tortos, nunca mais</h1>
-            <p>Seu sorriso merece um tratamento projetado
-               exclusivamente para ele. Conheça o Invisalign.</p>
-            <a href="#">
-               <p class="box grow">Saiba mais sobre a Invisalign.</p>
-            </a>
+            <p>Seu sorriso merece um tratamento projetado exclusivamente para ele. Conheça o Invisalign.</p>
+            <a href="#"><button class="btn-mais grow">Saiba mais sobre a Invisalign</button></a>
          </article>
       </section>
 
       <!-------------CONTAINER 2------------->
-
-      <section class="container2">
-         <div class="container-content">
-            
-            <h1>Dr. Raul Pistorello</h1>
-            <p class="p-spec">Especialista em Ortodontia e Ortopedia Facial</p>
-            <span class="img-dr"></span>
-            <div class="block-dr"></div>
-               <p class="block">Mais de 20 anos de experiência clínica.</p>
-               <p class="block">Palestrante oficial da Align Technology no Brasil.</p>
-               <p class="block">Invisalign Doctor com maior número de casos tratados em Santa Catarina.</p>
-               <p class="block">Membro da American Association of Orthodontists</p>
-               <p class="block">Membro da World Federation of Orthodontists</p>
-               <p class="block">Membro da German Association For Align Orthodontics</p>
+      <section class="container-presentetion" id="perfil">
+         <div class="content">
+            <div class="title">
+               <h1>Dr. Raul Pistorello</h1>
+               <p class="p-spec">Especialista em Ortodontia e Ortopedia Facial</p>
+               <span class="img-dr"></span>
             </div>
-            <p class="block">Saiba mais sobre mim</p>
+            <div class="experiencias">
+               <p class="exp">Mais de 20 anos de experiência clínica.</p>
+               <p class="exp">Palestrante oficial da Align Technology no Brasil.</p>
+               <p class="exp">Invisalign Doctor com maior número de casos tratados em Santa Catarina.</p>
+               <p class="exp">Membro da American Association of Orthodontists</p>
+               <p class="exp">Membro da World Federation of Orthodontists</p>
+               <p class="exp">Membro da German Association For Align Orthodontics</p>
+            </div>
+            <p class="saiba-mais grow">Saiba mais sobre mim</p>
          </div>
       </section>
-
       <!-------------CONTAINER 3------------->
-
-      <section class="container3">
-         <article class="art4">
+      <section class="container-Invisalign" id="invisalign">
+         <article class="title-invisalign">
             <h2>Invisalign em Blumenau é com o Dr. Raul Pistorello</h2>
             <p class="spec">Conheça o Alinhador mais avançado do Mundo<p>
             <p>Invisalign é inovação, é o futuro hoje<p>
          </article>
-         <article class="art5">
+         <div class="container-img">
+            <img src="assets/imagens/invasilgn.png" alt="Aparelho invasilgn">
+         </div>
+         <article class="card-description">
             <div class="card">
                <img src="" alt="">
                <p class="title">Praticamente invisivel</p>
@@ -97,53 +100,52 @@
 
       <section class="container4"><!--secão amarela-->
          <h2>Você está no caminho para a melhor versão do seu sorriso.</h2>
-         
-            <p class="button grow"><a  href="#">Agendar pelo whatsApp</a></p>
-         
+         <p class="button grow"><a  href="#">Agendar pelo whatsApp</a></p>
       </section>
 
-      <!-------------CONTAINER 5------------->
-
-      <section class="container5"> <!--secão branca-->
-         <div class="box">
+      <!-------------CONTAINER FEEDBACK------------->
+      <section class="container-feedback"> <!--secão branca-->
+         <div class="title">
             <h2>Quem conhece, aprova e recomenda</h2>
             <p>Depoimentos de ex-pacientes</p>
          </div>
-         <div class="box_dep">
-            <div class="card_dep">
+         <div class="depoimentos">
+            <div class="card_feedback">
                <blockquote>
                   <h3>Julia - Brusque</h3>
                   <cite>
                      <P>“É muito rápido e não dói. Quando eu coloquei, ninguém na escola percebeu.”</P>
                   </cite>
                </blockquote>
-               <video src=""></video>
+               <div class="card-img julia"></div>
             </div>
-            <div class="card_dep">
+
+            <div class="card_feedback">
                <blockquote>
-                  <h3>Mariana - Blumenau</h3>
+                  <h3>Paula - Blumenau</h3>
                   <cite>
                      <P>“O resultado vai ficar bom, faça! Eu consegui me olhar no espelho e dizer: Eu estou bonita.”</P>
                   </cite>
                </blockquote>
-               <video src=""></video>
+               <div class="card-img paula"></div>
             </div>
-            <div class="card_dep"> 
+            <div class="card_feedback">
                <blockquote>
-                  <h3>Guilherme - Blumenau</h3>
+                  <h3>Fernando - Blumenau</h3>
                   <cite>
                      <P>“Eu gostei bastante do aparelho, não tive nenhum problema, nenhum ponto negativo.”</P>
                   </cite>
                </blockquote>
-               <video src=""></video>
+               <div class="card-img fernando"></div>
             </div>
-         </div>
-         <div class="grow noticias">
-            <a href="#">
-               <p>Todas as noticias</p>
-            </a>
+            
          </div>
       </section>
+      <div class="grow noticias">
+         <a href="#">
+            <p>Todas as noticias</p>
+         </a>
+      </div>
 
       <!-------------CONTAINER 6------------->
 
@@ -153,7 +155,6 @@
    </main>
    <footer>
       <h1>Site criado Por Vicctor Neves a fim de estudos</h1>
-      <a href="https://raulpistorello.com.br">site de referencia</a>
    </footer>
 </body>
 </html>
