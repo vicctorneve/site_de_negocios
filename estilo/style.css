@@ -124,7 +124,7 @@ header .btn_wpp {
    align-items: center;
    background-size: cover;
    background-color: rgb(214, 182, 92);
-   background-image: url(../assets/imagens/background-container1.jpg);
+   background-image: url(../assets/imagens/bg-home.jpg);
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: scroll;
@@ -133,6 +133,7 @@ header .btn_wpp {
    position: relative;
 }
 .container-home .card{
+   font-size: 1.5em;
    width: 600px;
    padding: 20px;
    background-color: rgba(0, 0, 0, 0.349);
@@ -140,12 +141,13 @@ header .btn_wpp {
 }
 .container-home .card h1{
    padding: 10px 0px;
-   font-size: 5em;
+   font-size: 3em;
 }
 .btn-mais{
    display: flex;
-   font-size: 2em;
-   color: white;
+   font-size: 1.5em;
+   color: #282828;
+   border-radius: 10px;
    cursor: pointer;
    font-weight: bold;
    background-color: orange;
@@ -181,7 +183,7 @@ header .btn_wpp {
 }
 .container-presentetion .content span.img-dr{
    margin: 20px ;
-   background-image: url(/assets/imagens/imagem-container2.jpg);
+   background-image: url(/assets/imagens/img-DR.jpg);
    background-size: cover;
    background-color: aqua;
    display: block;
@@ -199,9 +201,10 @@ header .btn_wpp {
    padding: 10px;
 }
 .saiba-mais{
-   width: 180px;
+   width: 230px;
    cursor: pointer;
    color: black;
+   font-size: 1.5em;
    margin: 20px;
    font-weight: bold;
 }
@@ -209,7 +212,7 @@ header .btn_wpp {
    color: orange;
    text-decoration: underline;
 }
-/*------------CONTAINER 3------------*/
+/*------------CONTAINER INVISALIGN------------*/
 .container-Invisalign{
    background-color: rgb(70, 67, 67);
    padding: 20px;
