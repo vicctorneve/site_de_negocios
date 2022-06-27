@@ -350,13 +350,13 @@ footer p{
       height: 50vh;
    }
    .container-home .card{
+      font-size: 1em;
       text-align: center;
-      width: 100%;
+      width: 90%;
+      margin: 10px auto;
+      height: auto;
    }
    .container-home .card h1 {
-      font-size: 2em;
-   }
-   .btn-mais {
       font-size: 1em;
    }
    .container-presentetion .content{
