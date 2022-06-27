@@ -11,7 +11,7 @@
 
 ### Status: 🚧 Em construção... 🚧
 
-<p>Site desenvolvido a fim de estudos</p>
+Site desenvolvido a fim de estudos
   
 
 
