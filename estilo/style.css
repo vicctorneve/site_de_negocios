@@ -47,6 +47,9 @@ header nav a{
    color: black;
    text-decoration: none;
 }
+header nav a:hover {
+   text-decoration: underline;
+}
 header .btn_wpp{
    cursor: pointer;
    background: linear-gradient(to right, rgb(41, 186, 243), rgb(11, 168, 230));
@@ -78,7 +81,6 @@ header .btn_wpp {
    background-color: black;
    margin: 8px;
    transition: all 200ms ease-in-out;
-
 }
 @media (max-width: 800px) {
    .menu-hamburguer {
@@ -97,11 +99,12 @@ header .btn_wpp {
       justify-content: center;
       position: absolute;
       top: 57px;
-      height: 100vh;
+      padding: 0px 20px;
+      height: 50vh;
       z-index: 1000;
       background-color: white;
       right: 0;
-      width: 50vw; 
+      width: 100vw; 
    }
    ul li.btn_wpp {
       order: -1;
@@ -260,31 +263,30 @@ header .btn_wpp {
    color: orange;
 }
 /*------------CONTAINER 4------------*/
-.container4{
+.container-wpp{
    display: flex;
    padding:20px;
    background-color: orange;
    font-size: 1.3em;
    text-align: center;
 }
-.container4 h2{
+.container-wpp p{
+   font-weight: bolder;
    color: black;
    font-size: 1em;
    margin: auto;
    font-weight: normal;
 }
-.container4 .button{
+.container-wpp button{
    color: white;
    background: linear-gradient(to right, rgb(41, 186, 243), rgb(11, 168, 230));
    border-radius: 5px;
    padding: 20px;
    margin: 20px 40px;
+   border: none;
+   cursor: pointer;
 }
-.container4 a{
-   color: white;
-   text-decoration: none;
-}
-.container4 .button:hover{
+.container-wpp button:hover{
    background: linear-gradient(to right, rgb(3, 196, 3), rgb(3, 196, 3));
 }
 /*------------CONTAINER FEEDBACK------------*/
@@ -300,7 +302,7 @@ header .btn_wpp {
    font-size: 1.5em;
    margin: 40px;
 }
-.container-feedback .title p{
+.container-feedback .title p {
    color: rgb(155, 153, 153);
 }
 .container-feedback div.depoimentos{
@@ -309,7 +311,6 @@ header .btn_wpp {
 }
 div.depoimentos div.card_feedback{
    position: relative;
-   
    margin: 0px 10px;
    width: auto;
    margin-bottom: 30px;
@@ -380,5 +381,10 @@ footer p{
    }
    .container-feedback div.depoimentos{
       display: block;
+   }
+}
+@media (max-width:462px) {
+   .container-wpp p {
+      font-size: 0.8em;
    }
 }
