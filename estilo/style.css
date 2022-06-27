@@ -176,6 +176,9 @@ header .btn_wpp {
    width: auto;
    justify-content: space-between;
 }
+.container-presentetion .content .title {
+   text-align: center;
+}
 .container-presentetion .content h1{
    color: orange;
    font-size: 2em;
@@ -183,11 +186,10 @@ header .btn_wpp {
 }
 .container-presentetion .content span.img-dr{
    margin: 20px ;
-   background-image: url(/assets/imagens/img-DR.jpg);
+   background-image: url(../assets/imagens/img-DR.jpg);
    background-size: cover;
    background-color: aqua;
    display: block;
-   width: 300px;
    height: 400px;
 }
 .content .experiencias{
@@ -197,20 +199,22 @@ header .btn_wpp {
    flex-direction: column;
 }
 .exp{
-   background-color: orange;
+   background-color: #ffa500;
    padding: 10px;
 }
 .saiba-mais{
    width: 230px;
+   background-color: #ffa500;
+   padding: 10px;
    cursor: pointer;
    color: black;
    font-size: 1.5em;
    margin: 20px;
    font-weight: bold;
+   transition: all 300ms ease-in-out;
 }
 .saiba-mais:hover {
-   color: orange;
-   text-decoration: underline;
+   background-color: aqua;
 }
 /*------------CONTAINER INVISALIGN------------*/
 .container-Invisalign{
