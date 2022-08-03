@@ -167,11 +167,11 @@ header .btn_wpp {
    transition: 0.3s;
 }
 /*------------CONTAINER 2------------*/
-.container-presentetion{
+.container-about{
    background-color: white;
    height: auto;
 }
-.container-presentetion .content{
+.container-about .content{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    padding: 20px;
@@ -179,40 +179,44 @@ header .btn_wpp {
    width: auto;
    justify-content: space-between;
 }
-.container-presentetion .content .title {
+.container-about .content .title {
    text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-.container-presentetion .content h1{
+.container-about .content h1{
    color: orange;
    font-size: 2em;
    margin: 10px;
 }
-.container-presentetion .content span.img-dr{
+.container-about .content span.img-dr{
    margin: 20px ;
    background-image: url(../assets/imagens/img-DR.jpg);
    background-size: cover;
    background-color: aqua;
    display: block;
+   width: 300px;
    height: 400px;
 }
-.content .experiencias{
+.container-about .content .experiencias{
    display: flex;
    gap: 20px;
    padding: 0px 20px;
    flex-direction: column;
 }
-.exp{
+.container-about .exp{
    background-color: #ffa500;
    padding: 10px;
 }
 .saiba-mais{
-   width: 230px;
+   width: max-content;
    background-color: #ffa500;
    padding: 10px;
    cursor: pointer;
-   color: black;
+   color: white;
    font-size: 1.5em;
-   margin: 20px;
+   margin: 20px auto;
    font-weight: bold;
    transition: all 300ms ease-in-out;
 }
@@ -364,11 +368,8 @@ footer p{
    .container-home .card h1 {
       font-size: 1em;
    }
-   .container-presentetion .content{
+   .container-about .content{
       grid-template-columns: 1fr;
-   }
-   .container-presentetion .content .title{
-      margin: auto;
    }
    .container-Invisalign .card-description{
       display: flex;
