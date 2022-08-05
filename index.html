@@ -21,7 +21,7 @@
          <nav class="menu">
             <ul onclick="getElementById('checkbox-menu').checked = false;">
                <li><a href="#home">Home</a></li>
-               <li><a href="#perfil">Perfil</a></li>
+               <li><a href="#sobre">Sobre</a></li>
                <li><a href="#invisalign">invisalign</a></li>
                <li><a href="#feedback">Feedback</a></li>
                <li class="btn_wpp">WhatsApp</li>
@@ -32,65 +32,65 @@
    <script src="js/scroll-menu.js"></script>
    <main>
       <section class="container-home" id="home">
-         <article class="card">
+         <div class="card" data-anime="left">
             <h1>Dentes Tortos, nunca mais</h1>
             <p>Seu sorriso merece um tratamento projetado exclusivamente para ele. Conheça o Invisalign.</p>
-            <a href="#"><button class="btn-mais grow">Saiba mais sobre a Invisalign</button></a>
-         </article>
+            <a href="#"><button class="btn-mais decrease">Saiba mais sobre a Invisalign</button></a>
+         </div>
       </section>
-      <section class="container-about" id="perfil">
+      <section class="container-about" id="sobre">
          <div class="content">
-            <div class="title">
+            <div class="title" data-anime="up">
                <h1>Dr. Raul Pistorello</h1>
                <p class="p-spec">Especialista em Ortodontia e Ortopedia Facial</p>
                <span class="img-dr"></span>
             </div>
             <div class="experiencias">
-               <p class="exp">Mais de 20 anos de experiência clínica.</p>
-               <p class="exp">Palestrante oficial da Align Technology no Brasil.</p>
-               <p class="exp">Invisalign Doctor com maior número de casos tratados em Santa Catarina.</p>
-               <p class="exp">Membro da American Association of Orthodontists</p>
-               <p class="exp">Membro da World Federation of Orthodontists</p>
-               <p class="exp">Membro da German Association For Align Orthodontics</p>
+               <p class="exp" data-anime="right">Mais de 20 anos de experiência clínica.</p>
+               <p class="exp" data-anime="right">Palestrante oficial da Align Technology no Brasil.</p>
+               <p class="exp" data-anime="right">Invisalign Doctor com maior número de casos tratados em Santa Catarina.</p>
+               <p class="exp" data-anime="right">Membro da American Association of Orthodontists</p>
+               <p class="exp" data-anime="right">Membro da World Federation of Orthodontists</p>
+               <p class="exp" data-anime="right">Membro da German Association For Align Orthodontics</p>
             </div>
-            <p class="saiba-mais grow">Saiba mais sobre mim</p>
+            <p class="saiba-mais decrease" data-anime="up">Saiba mais sobre mim</p>
          </div>
       </section>
       <section class="container-Invisalign" id="invisalign">
-         <article class="title-invisalign">
-            <h2>Invisalign em Blumenau é com o Dr. Raul Pistorello</h2>
-            <p class="spec">Conheça o Alinhador mais avançado do Mundo<p>
-            <p>Invisalign é inovação, é o futuro hoje<p>
-         </article>
+         <div class="title-invisalign">
+            <h2 data-anime="left">Invisalign em Blumenau é com o Dr. Raul Pistorello</h2>
+            <p data-anime="left" class="spec">Conheça o Alinhador mais avançado do Mundo<p>
+            <p data-anime="left">Invisalign é inovação, é o futuro hoje<p>
+            </div>
          <div class="container-img">
             <img src="assets/imagens/invasilgn.png" alt="Aparelho invasilgn">
          </div>
-         <article class="card-description">
-            <div class="card">
+         <div class="card-description">
+            <div class="card" data-anime="up">
                <p class="title">Praticamente invisivel</p>
                <p>Imperceptível mesmo próximo</p>
             </div>
-            <div class="card">
+            <div class="card" data-anime="up">
                <p class="title">Removivel</p>
                <p>Não deixe de fazer o que você gosta</p>
             </div>
-            <div class="card">
+            <div class="card" data-anime="up">
                <p class="title">Sem fios e metais</p>
                <p>Mais conforto no tratamento</p>
             </div>
-            <div class="card">
+            <div class="card" data-anime="up">
                <p class="title">Projeção do sorriso</p>
                <p>Veja como ficará na primeira consulta</p>
             </div>
-         </article>
+         </div>
          <div class="end">
-            <a href="/"><p>Invisalign veja como ficará na primeira consulta</p></a>
-            <a href="/"><p>Invisalign para Jovens e Adultos</p></a>
+            <a href="/"><p data-anime="up">Invisalign veja como ficará na primeira consulta</p></a>
+            <a href="/"><p data-anime="up">Invisalign para Jovens e Adultos</p></a>
          </div>
       </section>
       <section class="container-wpp">
-         <p>Você está no caminho para a melhor versão do seu sorriso.</p>
-         <a  href="#"><button>Agendar pelo whatsApp</button></a>
+         <p data-anime="left">Você está no caminho para a melhor versão do seu sorriso.</p>
+         <a href="#"><button data-anime="left" class="decrease">Agendar pelo whatsApp</button></a>
       </section>
       <section class="container-feedback" id="feedback">
          <div class="title">
@@ -98,7 +98,7 @@
             <p>Depoimentos de ex-pacientes</p>
          </div>
          <div class="depoimentos">
-            <div class="card_feedback">
+            <div data-anime="up" class="card_feedback">
                <blockquote>
                   <h3>Julia - Brusque</h3>
                   <cite>
@@ -108,7 +108,7 @@
                <div class="card-img julia"></div>
             </div>
 
-            <div class="card_feedback">
+            <div data-anime="up" class="card_feedback">
                <blockquote>
                   <h3>Paula - Blumenau</h3>
                   <cite>
@@ -117,7 +117,7 @@
                </blockquote>
                <div class="card-img paula"></div>
             </div>
-            <div class="card_feedback">
+            <div data-anime="up" class="card_feedback">
                <blockquote>
                   <h3>Fernando - Blumenau</h3>
                   <cite>
@@ -129,6 +129,7 @@
          </div>
       </section>
    </main>
+   <script src="js/scrool-animate.js"></script>
    <footer>
       <p>Site desenvolvido Por <a href="https://github.com/vicctorneve">Vicctor Neves</a> a fim de estudos</p>
       <p><a href="http://www.raulpistorello.com.br" target="_blank">creditos</a></p>

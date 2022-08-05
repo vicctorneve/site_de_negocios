@@ -4,13 +4,16 @@
    text-decoration: none;
    list-style: none;
 }
+:root{
+   --color-hover: aqua;
+}
 a{
    color: inherit;
 }
 .content-menu{
+   padding: 10px;
    display: flex;
    max-width: 1200px;
-   padding: 10px;
    width: 100%;
    margin: auto;
    align-items: center;
@@ -24,9 +27,10 @@ body{
    overflow-x: hidden;
 }
 header{
+   width: 100vw;
+   padding: 0 10px;
    align-items: center;
    justify-content: center;
-   padding: 10px 0px;
    background-color: white;
    display: flex;
    color: black;
@@ -94,8 +98,11 @@ header .btn_wpp {
    }
    .menu ul{
       width: 100vw;
-      padding: 10px;
       flex-direction: column;
+   }
+   header nav li{
+      width: 100vw;
+      text-align: center;
    }
    #checkbox-menu:checked~.menu {
       display: flex;
@@ -103,11 +110,14 @@ header .btn_wpp {
       visibility: visible;
       position: absolute;
       top: 57px;
-      height: 40vh;
-      z-index: 100;
+      width: 40vw;
+      height: 100vh;
+      z-index: 10;
       background-color: white;
+      width: 60vw; 
       right: 0;
-      width: 100vw; 
+      align-items: center;
+      justify-content: center;
    }
    ul li.btn_wpp {
       order: -1;
@@ -161,15 +171,7 @@ header .btn_wpp {
    padding: 10px;
 }
 .btn-mais:hover{
-   background-color: aqua;
-}
-.grow{
-   -webkit-transform: scale(1.0);
-   transition: 0.3s;
-}
-.grow:hover{
-   -webkit-transform: scale(1.1);
-   transition: 0.3s;
+   background-color: var(--color-hover);
 }
 /*------------CONTAINER 2------------*/
 .container-about{
@@ -276,7 +278,7 @@ header .btn_wpp {
    display: flex;
    padding:20px;
    background-color: orange;
-   font-size: 1.3em;
+   font-size: 1em;
    text-align: center;
 }
 .container-wpp p{
@@ -288,15 +290,15 @@ header .btn_wpp {
 }
 .container-wpp button{
    color: white;
-   background: linear-gradient(to right, rgb(41, 186, 243), rgb(11, 168, 230));
    border-radius: 5px;
    padding: 20px;
    margin: 20px 40px;
    border: none;
    cursor: pointer;
+   background: linear-gradient(to right, rgb(5, 175, 5), rgb(4, 184, 4));
 }
 .container-wpp button:hover{
-   background: linear-gradient(to right, rgb(3, 196, 3), rgb(3, 196, 3));
+   background-color: var(--color-hover);
 }
 /*------------CONTAINER FEEDBACK------------*/
 .container-feedback{
@@ -398,4 +400,35 @@ footer a{
    .container-wpp p {
       font-size: 0.8em;
    }
+}
+/* Animações */
+[data-anime]{
+   transition: 0.4s;
+   opacity: 0;
+}
+[data-anime="up"]{
+   transform: translate3d(0, 100px, 0);
+}
+[data-anime="left"]{
+   transform: translate3d(-100%, 0, 0);
+}
+[data-anime="right"]{
+   transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate{
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+}
+.grow{
+   transition: 0.3s;
+}
+.grow:hover{
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+.decrease{
+   transition: 0.4s;
+}
+.decrease:hover{
+   transform: scale(0.9);
 }
